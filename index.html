@@ -136,7 +136,7 @@
   </div>
 
   <script>
-    const  = document.getElementById('Sound');
+    const dilaw = document.getElementById('dilawSound'); // Correct audio reference
     const noBtn = document.getElementById('noBtn');
 
     // Floating hearts
@@ -169,9 +169,9 @@
       document.getElementById('noMessage').style.display = 'none';
       document.getElementById('yesMessage').style.display = 'block';
 
-      // Play  music
-      .currentTime = 0;
-      .play().catch(() => console.log("Music will play on first interaction"));
+      // Play Dilaw music
+      dilaw.currentTime = 0;
+      dilaw.play().catch(() => console.log("Music will play after first interaction"));
     }
 
     // Say NO
@@ -179,7 +179,7 @@
       document.getElementById('noMessage').style.display = 'block';
     }
 
-    // Attach dodge function to NO button
+    // Attach click function to NO button
     noBtn.addEventListener('click', sayNo);
   </script>
 </body>
