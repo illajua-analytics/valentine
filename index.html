@@ -155,13 +155,13 @@ const noBtn = document.getElementById("noBtn");
 const bgMusic = document.getElementById("bgMusic");
 
 const compliments = [
-  "Angganda mo lalo pag nakangiti 😘",
+  "Ang ganda mo lalo pag nakangiti 😘",
   "Ikaw ang laging tumatakbo sa isipan ko 💖",
   "Ikaw ang pipiliin sa araw-araw ✨",
   "Masaya ako pag naririnig ko boses mo 💕",
   "Namimiss ko ang amoy mo 🍫",
-  "Hinahanap hanap ka ng katawan ko 🥰",
-  "Ikaw ang bestfriend ko at ang pinakmamahal ko 💘",
+  "Hinahanap-hanap ka ng katawan ko 🥰",
+  "Ikaw ang bestfriend ko at ang pinakamamahal ko 💘",
   "Mahalaga ka sakin 😌",
   "Certified cutie award winner 🏆",
   "Napapatawa mo ako lagi at masaya ako pag kasama ka 💞",
@@ -191,7 +191,7 @@ setInterval(createFloating, 600);
 heart.addEventListener("click", (e)=>{
 
   if (!musicStarted) {
-    bgMusic.play();
+    bgMusic.play().catch(()=>{});
     musicStarted = true;
   }
 
